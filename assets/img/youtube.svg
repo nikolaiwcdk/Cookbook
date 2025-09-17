@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #f8f4ee;
+      }
+
+      .cls-1 {
+        opacity: 0;
+      }
+
+      .cls-3 {
+        fill: #d4af37;
+      }
+    </style>
+  </defs>
+  <g id="Circle_Button_SIZE_MEDIUM_STATE_DEFAULT_STYLE_STYLE3_" data-name="Circle Button [SIZE=MEDIUM][STATE=DEFAULT][STYLE=STYLE3]" transform="translate(-14 -14)">
+    <g id="Icon_ICON_feather_youtube_SIZE_MEDIUM_STATE_DEFAULT_STYLE_STYLE3_" data-name="Icon [ICON=feather/youtube][SIZE=MEDIUM][STATE=DEFAULT][STYLE=STYLE3]" transform="translate(14 14)">
+      <rect id="Area_ICON:feather_youtube_SIZE:MEDIUM_STATE:DEFAULT_STYLE:STYLE3_" data-name="Area [ICON:feather/youtube][SIZE:MEDIUM][STATE:DEFAULT][STYLE:STYLE3]" class="cls-1" width="20" height="20"/>
+      <g id="Icon" transform="translate(1.667 1.667)">
+        <path id="dbb1d2ac-adee-4ca5-859c-f866565ce217" class="cls-2" d="M20.49,5.836a2.528,2.528,0,0,0-1.764-1.818,65.427,65.427,0,0,0-7.818-.382s-6.254,0-7.817.418A2.529,2.529,0,0,0,1.327,5.872a26.379,26.379,0,0,0-.418,4.809,26.4,26.4,0,0,0,.418,4.845,2.528,2.528,0,0,0,1.764,1.746c1.563.418,7.817.418,7.817.418s6.255,0,7.818-.418a2.529,2.529,0,0,0,1.764-1.818,26.344,26.344,0,0,0,.418-4.773A26.416,26.416,0,0,0,20.49,5.836Z" transform="translate(-2.575 -2.33)"/>
+        <path id="_2ab0f1f7-df66-4644-b5ef-7eb45d1aadf8" data-name="2ab0f1f7-df66-4644-b5ef-7eb45d1aadf8" class="cls-3" d="M8.863,13.654l5.227-2.973L8.863,7.709Z" transform="translate(-2.575 -2.33)"/>
+      </g>
+    </g>
+  </g>
+</svg>

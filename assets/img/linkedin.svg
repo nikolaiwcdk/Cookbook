@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #f8f4ee;
+      }
+
+      .cls-1 {
+        opacity: 0;
+      }
+    </style>
+  </defs>
+  <g id="Circle_Button_SIZE_MEDIUM_STATE_DEFAULT_STYLE_STYLE3_" data-name="Circle Button [SIZE=MEDIUM][STATE=DEFAULT][STYLE=STYLE3]" transform="translate(-14 -14)">
+    <g id="Icon_ICON_feather_linkedin_SIZE_MEDIUM_STATE_DEFAULT_STYLE_STYLE3_" data-name="Icon [ICON=feather/linkedin][SIZE=MEDIUM][STATE=DEFAULT][STYLE=STYLE3]" transform="translate(14 14)">
+      <rect id="Area_ICON:feather_linkedin_SIZE:MEDIUM_STATE:DEFAULT_STYLE:STYLE3_" data-name="Area [ICON:feather/linkedin][SIZE:MEDIUM][STATE:DEFAULT][STYLE:STYLE3]" class="cls-1" width="20" height="20"/>
+      <g id="Icon" transform="translate(1.667 1.667)">
+        <path id="_7feecd26-46df-42fb-b8ac-e70729deec87" data-name="7feecd26-46df-42fb-b8ac-e70729deec87" class="cls-2" d="M16,8a6,6,0,0,1,6,6v7H18V14a2,2,0,0,0-4,0v7H10V14A6,6,0,0,1,16,8Z" transform="translate(-3.666 -3.167)"/>
+        <rect id="_5f2e9e2b-b1ef-4ea0-82d2-9c3f8a44da7b" data-name="5f2e9e2b-b1ef-4ea0-82d2-9c3f8a44da7b" class="cls-2" width="4" height="12" transform="translate(-1.666 5.833)"/>
+        <circle id="_75eed2a9-4ee1-4cce-9a64-746fa4f8aadd" data-name="75eed2a9-4ee1-4cce-9a64-746fa4f8aadd" class="cls-2" cx="2" cy="2" r="2" transform="translate(-1.666 -1.167)"/>
+      </g>
+    </g>
+  </g>
+</svg>
