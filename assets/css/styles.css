@@ -705,7 +705,7 @@ header {
 }
 
 .hero-title {
-  font-size: 3rem;
+  font-size: var(--font-size-xxl);
   color: var(--color-gold);
   font-weight: 700;
   margin-bottom: 1.5rem;
@@ -1098,6 +1098,13 @@ header {
   justify-content: center;
 }
 
+.footer-social .icon:hover {
+  background: var(--color-primary-hover);
+   box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  transform: translateY(-4px) scale(1.04);
+  transition: color 0.3s, transform 0.3s;
+}
+
 .footer-social .icon img,
 .footer-social .icon svg {
   width: 22px;
@@ -1139,7 +1146,7 @@ header {
   align-items: center;
   padding: 22px 0;
   font-size: var(--font-size-base);
-  font-weight: 600;
+  font-weight: 400;
   box-sizing: border-box;
   overflow: hidden;
   margin-top: 0;
@@ -1147,7 +1154,7 @@ header {
 
 .footer-bottom a {
   color: var(--color-offwhite);
-  font-weight: 700;
+  font-weight: 400;
   text-decoration: none;
   margin-left: 30px;
 }
