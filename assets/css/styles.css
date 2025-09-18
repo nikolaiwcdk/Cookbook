@@ -20,6 +20,57 @@
 }
 
 
+/* Regular */
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/assets/fonts/HelveticaNeue.woff2") format("woff2"),
+       url("/assets/fonts/HelveticaNeue.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Italic */
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/assets/fonts/HelveticaNeue-Italic.woff2") format("woff2"),
+       url("/assets/fonts/HelveticaNeue-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Light */
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/assets/fonts/HelveticaNeue-Light.woff2") format("woff2"),
+       url("/assets/fonts/HelveticaNeue-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Medium */
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/assets/fonts/HelveticaNeue-Medium.woff2") format("woff2"),
+       url("/assets/fonts/HelveticaNeue-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Bold */
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/assets/fonts/HelveticaNeue-Bold.woff2") format("woff2"),
+       url("/assets/fonts/HelveticaNeue-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
@@ -221,7 +272,7 @@ header {
     justify-content: center;
     gap: 1.2rem;
     width: 100vw;
-    margin-bottom: 0.5rem;
+    margin-bottom: -2.5rem;
   }
   .logo {
     max-width: 55vw;
@@ -249,6 +300,7 @@ header {
     justify-content: center;
     align-items: center;
     margin: 0.5rem auto 0 auto;
+    margin-bottom: 2rem;
     width: 100vw;
     padding: 0 1rem;
   }
@@ -1205,5 +1257,62 @@ header {
 .hero-left.fade-in.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+@media (max-width: 900px) {
+  .fade-in,
+  .flavor-row.fade-in,
+  .hero-left.fade-in {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+
+/* Modal overlay */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex; /* vises fra start */
+  align-items: center;
+  justify-content: center;
+  z-index: 3000;
+}
+
+/* Skjult state */
+.modal.hidden { display: none; }
+
+.modal-content {
+  background: var(--color-darkgray);
+  color: var(--color-offwhite);
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  position: relative;
+  animation: fadeIn .3s ease;
+  text-align: center;
+}
+
+.modal-content h2 {
+  color: var(--color-gold);
+  margin-bottom: 1rem;
+}
+
+.modal-actions {
+  margin-top: 1.5rem;
+}
+
+.modal-actions .btn {
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 

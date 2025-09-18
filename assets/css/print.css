@@ -1,0 +1,141 @@
+/* Print stylesheet: Hver sektion på egen A4-side, flotte overskrifter og billeder */
+
+@media print {
+  :root {
+    --color-bg: #fff !important;
+    --color-text: #111 !important;
+    --color-heading: #111 !important;
+    --color-primary: #111 !important;
+    --color-offwhite: #111 !important;
+    --font-family-base: 'garamond ', garamond, serif !important;
+    --font-family-second: 'garamond', garamond, serif !important;
+  }
+
+  body {
+    background: #fff !important;
+    color: #111 !important;
+    font-family: var(--font-family-base) !important;
+    font-size: 12pt !important;
+    line-height: 1.6 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Fjern alt UI og interaktivt */
+  header, .navbar, .main-nav, .burger, .footer, .footer-bottom, .modal,
+  .scroll-down, .scroll-up, .nav-btns, .btn, .hero-btn, .btn-light, .icon, i, svg {
+    display: none !important;
+  }
+
+  /* Hovedsektioner: hver på egen A4-side */
+  .hero,
+  .flavor-section,
+  .worldwide-section,
+  .stats-bar {
+    page-break-before: always !important;
+    page-break-after: always !important;
+    padding-top: 2cm !important;
+    padding-bottom: 2cm !important;
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Sektionstitler */
+  h1, h2, h3,
+  .hero-title,
+  .flavor-title,
+  .worldwide-title {
+    color: #111 !important;
+    font-family: var(--font-family-second) !important;
+    font-weight: bold !important;
+    font-size: 2.2em !important;
+    margin: 0 0 0.5cm 0 !important;
+    padding: 0 !important;
+    page-break-after: avoid !important;
+  }
+
+  /* Undertekster og tekstindhold */
+  .hero-desc,
+  .flavor-desc,
+  .worldwide-desc,
+  .stat-label {
+    font-size: 1.15em !important;
+    color: #222 !important;
+    margin-bottom: 0.3cm !important;
+    max-width: 100% !important;
+  }
+
+  /* Billeder og billedsektioner */
+  img,
+  .image-card img,
+  .flavor-img img {
+    filter: none !important;
+    opacity: 1 !important;
+    max-width: 100% !important;
+    height: auto !important;
+    border-radius: 0 !important;
+    page-break-inside: avoid !important;
+    margin-bottom: 0.5cm !important;
+    display: block !important;
+  }
+  .image-grid,
+  .flavor-list,
+  .stats-container {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    gap: 0 !important;
+  }
+  .flavor-row,
+  .hero-split,
+  .stats-container {
+    display: block !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    gap: 0 !important;
+    margin-bottom: 0.7cm !important;
+    page-break-inside: avoid !important;
+  }
+
+  /* Links */
+  a, a:visited {
+    color: #111 !important;
+    text-decoration: underline !important;
+    word-break: break-all;
+  }
+
+  /* Tal/statistikker */
+  .stat-number {
+    font-size: 2em !important;
+    font-weight: bold !important;
+    color: #111 !important;
+    margin-bottom: 0.2cm !important;
+  }
+
+  /* Fjern overlay og baggrundsbilleder */
+  .worldwide-section::before,
+  .hero-bg,
+  .image-card,
+  .flavor-img,
+  .stats-bar {
+    background: none !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  /* Fjern animation/transitions og ekstra margin/padding */
+  * {
+    transition: none !important;
+    animation: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
