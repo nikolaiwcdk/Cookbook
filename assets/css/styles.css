@@ -952,7 +952,7 @@ header {
   }
 }
 .worldwide-section {
-  background-image: url('./assets/img/Opskrift_foto005.webp');
+  background-image: url('../img/Opskrift_foto005.webp');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
