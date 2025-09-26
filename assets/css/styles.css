@@ -1323,15 +1323,6 @@ header {
   to { opacity: 1; transform: translateY(0); }
 }
 
-modal-trigger a {
-  cursor: pointer;
-  color: var(--color-primary);
-}
-modal-trigger a:hover {
-  color: var(--color-primary-hover);
-  text-decoration: underline;
-}
-
 .underline:hover {
   text-decoration: underline;
 }
